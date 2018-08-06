@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_news"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_gps"
+        android:icon="@drawable/ic_gps"
+        android:title="@string/title_gps" />
+
+    <item
+        android:id="@+id/navigation_to"
+        android:icon="@drawable/ic_car_repair1"
+        android:title="@string/title_to" />
+
+    <item
+        android:id="@+id/navigation_reg"
+        android:icon="@drawable/ic_taxi_driver"
+        android:title="@string/title_reg" />
+
+</menu>

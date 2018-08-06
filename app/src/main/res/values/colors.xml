@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#cdb226</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#cdb226</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="app_bar">#f4f4f4</color>
+    <color name="tellow_holo">#fff2ae</color>
+    <color name="blue">#0055cc</color>
+    <color name="yellow">#FFDC26</color>
+    <color name="red">#FFFF0000</color>
+</resources>

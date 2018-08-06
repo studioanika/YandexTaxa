@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rel_app"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/app_bar">
+
+        <ImageView
+            android:id="@+id/img_share"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            app:srcCompat="@drawable/ic_share_black_24dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Диагностическая карта"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel_app">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="ОФИЦИАЛЬНЫЙ ПАРТНЕР"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/text_to"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <RelativeLayout
+                   android:id="@+id/rel_l_d"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="8dp"
+                   android:background="@color/app_bar"
+                   android:paddingBottom="8dp"
+                   android:paddingLeft="16dp"
+                   android:paddingRight="16dp"
+                   android:paddingTop="8dp">
+
+
+                   <TextView
+                       android:id="@+id/textView"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="16dp"
+                       android:layout_toRightOf="@+id/img_l_d"
+                       android:text="Личные данные"
+                       android:textColor="@color/black"
+                       android:textSize="16sp" />
+
+                   <ImageView
+                       android:id="@+id/img_l_d"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       app:srcCompat="@drawable/ic_keyboard_arrow_up_black_24dp" />
+               </RelativeLayout>
+
+               <LinearLayout
+                   android:id="@+id/lin_l_d"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <android.support.design.widget.TextInputLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="16dp"
+                       android:layout_marginRight="16dp">
+
+                       <android.support.design.widget.TextInputEditText
+                           android:id="@+id/gps.et_fio"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:hint="ФИО" />
+                   </android.support.design.widget.TextInputLayout>
+
+                   <android.support.design.widget.TextInputLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="16dp"
+                       android:layout_marginRight="16dp">
+
+                       <android.support.design.widget.TextInputEditText
+                           android:id="@+id/gps.et_city"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:hint="Город" />
+                   </android.support.design.widget.TextInputLayout>
+
+                   <android.support.design.widget.TextInputLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="16dp"
+                       android:layout_marginRight="16dp">
+
+                       <android.support.design.widget.TextInputEditText
+                           android:id="@+id/gps.et_phone"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:hint="Телефон"
+                           android:inputType="phone" />
+                   </android.support.design.widget.TextInputLayout>
+
+                   <android.support.design.widget.TextInputLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="16dp"
+                       android:layout_marginRight="16dp"
+                       android:layout_marginTop="8dp">
+
+                       <android.support.design.widget.TextInputEditText
+                           android:id="@+id/gps.et_email"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:hint="E-mail"
+                           android:inputType="textEmailAddress" />
+                   </android.support.design.widget.TextInputLayout>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rel_a_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/app_bar"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/img_a_d"
+                        android:text="Данные автомобиля"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/img_a_d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_keyboard_arrow_down_black_24dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_a_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/gps.et_gos_reg_znak"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Гос. рег. знак" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/gps.et_number_kuzov"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Кузов №" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/gps.et_razreshennaya_massa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Разрешенная макс. масса (кг)" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/gps.et_massa_bez_nagr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Масса без нагрузки(кг)" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Spinner
+                        android:id="@+id/sp_type_toplivo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+
+                    <Spinner
+                        android:id="@+id/sp_type_tormoz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rel_r_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/app_bar"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/img_r_d"
+                        android:text="Регистрационный документ"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/img_r_d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_keyboard_arrow_down_black_24dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_r_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <Spinner
+                        android:id="@+id/sp_type_r_d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/gps.et_rd_seria"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Серия *" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/gps.et_rd_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Номер *" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/gps.et_rd_from"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Кем выдан *" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/gps.et_rd_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Дата выдачи *" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/gps.et_rd_marka_shin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Марка шин" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/gps.et_rd_probeg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Пробег ТС (км) *" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/gps.et_rd_VIN"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="VIN (17 символов) *" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/gps.et_rd_marka_ts"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Марка автомобиля *" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/gps.et_rd_model_ts"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Модель автомобиля *" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Spinner
+                        android:id="@+id/gps.sp_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/gps.et_rd_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Год выпуска *" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/gps.et_rd_rama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Шасси (Рама)" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/gps_rel_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Добавьте фотографии" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/ic_add_a_photo_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/img_photo"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/to_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/text_gps"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/gps.check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/gps_btn_pd"
+                    android:text="Даю согласие на обработку персональных данных"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/gps_btn_pd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/btn_active"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="ознакомиться"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/gps.send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/btn_no_active"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:enabled="false"
+                    android:text="Отправить заявку" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/prgrs"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
